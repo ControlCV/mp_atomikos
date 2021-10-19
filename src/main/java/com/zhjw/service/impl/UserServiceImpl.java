@@ -4,7 +4,7 @@ import com.zhjw.common.id.IdGenerator;
 import com.zhjw.entity.User;
 import com.zhjw.mapper.master.MasterUserMapper;
 import com.zhjw.mapper.slave.SlaveUserMapper;
-import com.zhjw.service.TestService;
+import com.zhjw.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,7 +19,7 @@ import javax.annotation.Resource;
  * @Version 1.0
  */
 @Service
-public class TestServiceImpl implements TestService {
+public class UserServiceImpl implements UserService {
 
     @Resource
     private MasterUserMapper masterUserMapper;

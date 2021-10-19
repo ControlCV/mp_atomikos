@@ -1,7 +1,7 @@
 package com.zhjw.controller;
 
 import com.zhjw.common.response.ResponseResult;
-import com.zhjw.service.TestService;
+import com.zhjw.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,15 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version 1.0
  */
 @RestController
-public class TestController {
+public class UserController {
 
     @Autowired
-    private TestService testService;
+    private UserService userService;
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     @ResponseBody
     public ResponseResult test() {
-        testService.testInsert();
+        userService.testInsert();
         return ResponseResult.success();
     }
 
