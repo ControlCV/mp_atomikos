@@ -8,5 +8,9 @@ java_1.8 + springboot +atomikos + mybatis-plus +mysql
 
 
 #### 使用说明
-主要参考 common/db 文件夹下面的配置类
+1.将resources/sql/create.sql 文件导入数据库
+2.运行程序，查看运行结果
+
+#### 其他信息
+实现思路主要参考 common/db 文件夹下面的配置类
 
